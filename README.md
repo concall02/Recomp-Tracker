@@ -27,3 +27,10 @@ npm run build    # static build in dist/ — host anywhere (Netlify, GitHub Page
 Everything is stored under one key (`recomp:v2`), in `localStorage` or in `window.storage` when it runs as a Claude artifact.
 Logs from the old version (`pl:*` keys) are imported automatically the first time it runs.
 Data stays in one browser on one device. Use **Backup / Restore** to download a JSON file and move it somewhere else.
+
+## Hosting
+
+Every push to `main` builds the app and publishes it to GitHub Pages through `.github/workflows/deploy.yml`:
+https://concall02.github.io/Recomp-Tracker/
+
+On your phone, open that link and use **Add to Home Screen**. It then opens like an app, and your log stays saved in that browser.
